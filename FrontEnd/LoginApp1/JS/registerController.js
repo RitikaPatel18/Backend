@@ -28,7 +28,7 @@
                 .then(function (response) {
                     if (response.success) {
                         alert('Registration successful');
-                        console.log('Registration done................');
+                        console.log('Registration done.........................');
                          $location.path('/');
                     } else {
                         alert(response.message);
