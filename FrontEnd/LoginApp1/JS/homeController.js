@@ -29,7 +29,7 @@
         function loadAllUsers() {
             UserService.get()
                 .then(function (users) {
-                    console.log(users);
+                    console.log("users..."+users);
                     vm.allUsers = users;
                 });
         }
