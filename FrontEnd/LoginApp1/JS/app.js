@@ -1,0 +1,40 @@
+(
+    function () {
+        'use strict';
+    
+        angular
+            .module('app', ['ngRoute', 'ngCookies'])
+            .config(config)
+            .run(run);
+    
+        config.$inject = ['$routeProvider'];
+        function config($routeProvider) {
+            $routeProvider
+            .when('/', {
+                    controller: 'LoginController',
+                    templateUrl: 'login.html',
+                    controllerAs: 'vm'
+                })
+    
+                .when('/home', {
+                    controller: 'HomeController',
+                    templateUrl: 'home.html',
+                    controllerAs: 'vm',
+                })            
+                .when('/register', {
+                    controller: 'RegisterController',
+                    templateUrl: 'register.html',
+                    controllerAs: 'vm'
+                })
+                .when('/error', {
+                    templateUrl: 'error.html',
+                    controllerAs: 'vm'
+                })
+                .otherwise({ redirectTo: '/login' });
+        }    
+        run.$inject = ['$rootScope'];
+        
+        function run(){
+          console.clear();
+        }
+    })();

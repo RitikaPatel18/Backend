@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\VSCODE\\Angular\\LoginApp"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true,
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "LoginApp1"
+	}
+}
